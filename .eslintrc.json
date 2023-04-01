@@ -13,6 +13,7 @@
     "no-console": 0,
     "no-fallthrough": "error",
     "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
     //ts-lint
     "@typescript-eslint/no-explicit-any": 2
   }
