@@ -1,0 +1,19 @@
+{
+  "plugins": ["prettier"],
+  "extends": ["airbnb-base", "airbnb-typescript/base", "plugin:prettier/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "rules": {
+    //prettier
+    "prettier/prettier": "error",
+    //eslint
+    "no-debugger": "off",
+    "no-console": 0,
+    "no-fallthrough": "error",
+    "class-methods-use-this": "off",
+    //ts-lint
+    "@typescript-eslint/no-explicit-any": 2
+  }
+}
