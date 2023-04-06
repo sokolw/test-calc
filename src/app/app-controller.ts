@@ -1,5 +1,4 @@
 import { AppModel } from './app-model';
-// eslint-disable-next-line import/no-cycle
 import { AppView } from './app-view';
 import { RawUserFormData } from './interfaces/raw-user-form-data';
 import { UserDataToCalculate } from './interfaces/user-data-to-calculate';

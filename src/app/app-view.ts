@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 import { AppController } from './app-controller';
 import { AppModel } from './app-model';
 import { CalculationRule } from './interfaces/calculation-rule';
@@ -159,7 +158,7 @@ export class AppView implements InputStaticDataObserver, TableResultsObserver {
     const totalCostLabel = this.createElement('p');
     totalCostLabel.textContent = `Итоговая стоимость: ${productData.totalCost}`;
     product.append(productArea, frameSize, tableLabel, tableResults, totalCostLabel);
-    // insert product
+    // insert product to result container
     const resultContainer = document.querySelector('.result-container')!;
     resultContainer.innerHTML = '';
     resultContainer.append(product);
@@ -195,10 +194,6 @@ export class AppView implements InputStaticDataObserver, TableResultsObserver {
     }
     table.append(tableHead, tableBody);
     return table;
-    // insert table
-    // const resultContainer = document.querySelector('.result-container')!;
-    // resultContainer.innerHTML = '';
-    // resultContainer.append(table);
   }
 
   public createElement<T extends keyof HTMLElementTagNameMap>(

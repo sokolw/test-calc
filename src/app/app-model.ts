@@ -196,13 +196,5 @@ export class AppModel {
     };
 
     this.notifyTableResultsObserver();
-    // console.log(this.materialCalculationResults);
-    // console.log(
-    //   `\t${sheet.name}\t${sheet.unit}\t${numberSheets}\t${totalCostOfSheets}\n\r
-    //   \t${pipe.name} ${pipe.unit} ${overallPipeLength}\t${totalCostOfPipes}\n\r
-    //   \t${screw.name}\t${screw.unit}\t${overallNumberScrews}\t${totalCostOfScrews}\n\r
-    //   \tд х ш: ${miniFrameLength}x${miniFrameWidth}
-    //   `
-    // );
   }
 }
